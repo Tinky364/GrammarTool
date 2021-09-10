@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91e371301eabf9498e611b41d283cf4, type: 3}
+  m_Name: Tree - Grammar Rule Data
+  m_EditorClassIdentifier: 
+  rules:
+  - inputWord: Branch
+    outputSentences:
+    - probability: 0.312
+      outputSentence: '<O Branch><M SetParent(F, 1)><M SetRot(R[-30, -20], 0, R[-5,
+        5])><M Place(Y+, Y-)>
+
+        <O Branch><M SetParent(F, 1)><M SetRot(R[10,
+        20], 0, R[10, 30])><M Place(Y+, Y-)>
+
+        <O Branch><M SetParent(F, 1)><M
+        SetRot(R[10, 20], 0, R[-30, -10])><M Place(Y+, Y-)>'
+    - probability: 0.773
+      outputSentence: '<O Branch><M SetParent(F, 1)><M SetRot(R[-30, -20], 0, R[-5,
+        5])><M Place(Y+, Y-)>
+
+        <O Branch><M SetParent(F, 1)><M SetRot(R[10,
+        20], 0, R[10, 30])><M Place(Y+, Y-)>'
+    - probability: 0.768
+      outputSentence: '<O Branch><M SetParent(F, 1)><M SetRot(R[10, 20], 0, R[10,
+        30])><M Place(Y+, Y-)>
+
+        <O Branch><M SetParent(F, 1)><M SetRot(R[10,
+        20], 0, R[-30, -10])><M Place(Y+, Y-)>'
+    - probability: 0.766
+      outputSentence: '<O Branch><M SetParent(F, 1)><M SetRot(R[-30, -20], 0, R[-5,
+        5])><M Place(Y+, Y-)>
+
+        <O Branch><M SetParent(F, 1)><M SetRot(R[10,
+        20], 0, R[-30, -10])><M Place(Y+, Y-)>'
+    - probability: 0.201
+      outputSentence: <O Branch><M SetParent(F, 1)><M SetRot(R[-30, -20], 0, R[-5,
+        5])><M Place(Y+, Y-)>
+    - probability: 0.201
+      outputSentence: <O Branch><M SetParent(F, 1)><M SetRot(R[10, 20], 0, R[10,
+        30])><M Place(Y+, Y-)>
+    - probability: 0.2
+      outputSentence: <O Branch><M SetParent(F, 1)><M SetRot(R[10, 20], 0, R[-30,
+        -10])><M Place(Y+, Y-)>
+    - probability: 0.051
+      outputSentence: 

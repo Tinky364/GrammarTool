@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91e371301eabf9498e611b41d283cf4, type: 3}
+  m_Name: Building - Grammar Rule Data
+  m_EditorClassIdentifier: 
+  rules:
+  - inputWord: Building
+    outputSentences:
+    - probability: 1
+      outputSentence: <O 3><M SetParent(F, R)><M Place(Y+, Y-)>
+  - inputWord: 3
+    outputSentences:
+    - probability: 1
+      outputSentence: <O 2><M SetParent(F, R)><M Place(Y+, Y-)>
+  - inputWord: 2
+    outputSentences:
+    - probability: 0.914
+      outputSentence: <O 2><M SetParent(F, R)><M Place(Y+, Y-)>
+    - probability: 0.733
+      outputSentence: <O 1><M SetParent(F, R)><M Place(Y+, Y-)>
+  - inputWord: 1
+    outputSentences:
+    - probability: 0.714
+      outputSentence: <O 7><M SetParent(F, R)><M Place(Z-, Z+)><M Move(0, 1, 0)>
+    - probability: 0.701
+      outputSentence: <O 7><M SetParent(F, R)><M Place(Z+, Z+)><M Move(0, -2, 0)>
+    - probability: 0.428
+      outputSentence: '<O 7><M SetParent(F, R)><M Place(Z-, Z+)><M Move(0, 1, 0)>
+
+        <O
+        7><M SetParent(F, R)><M Place(Z+, Z+)><M Move(0, -2, 0)>'
+    - probability: 0.222
+      outputSentence: 
+  - inputWord: 7
+    outputSentences:
+    - probability: 1
+      outputSentence: <O 8><M SetParent(F, R)><M Place(Y-, Y+)>
+    - probability: 1
+      outputSentence: <O 10><M SetParent(F, R)><M Place(Y-, Y+)>
+  - inputWord: 8
+    outputSentences:
+    - probability: 0.532
+      outputSentence: <O 8><M SetParent(F, R)><M Place(Y-, Y+)>
+    - probability: 0.525
+      outputSentence: <O 10><M SetParent(F, R)><M Place(Y-, Y+)>
+    - probability: 1
+      outputSentence: <O 9><M SetParent(F, R)><M Place(Y-, Y+)>
+  - inputWord: 10
+    outputSentences:
+    - probability: 0.687
+      outputSentence: <O 10><M SetParent(F, R)><M Place(Y-, Y+)>
+    - probability: 0.697
+      outputSentence: <O 8><M SetParent(F, R)><M Place(Y-, Y+)>
+    - probability: 1
+      outputSentence: <O 9><M SetParent(F, R)><M Place(Y-, Y+)>
